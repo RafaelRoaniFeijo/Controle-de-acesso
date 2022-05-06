@@ -1,0 +1,8 @@
+conecta so seleciona esp32 generic module e digita at no monitor serial e precisa aprender reset
+
+
+Verificado que quando o GPIO0 está em estado 0, entra em modo gravação.
+Quando está em estado 1, é a configuração do firmware e utiliza os pinos
+para isso funcionar, precisa que o gpio0 esteja em nivel baixo, para
+funcionar é preciso dar reset com o botão e também utilizando um
+capacitor no pino do reset (como foi feito)

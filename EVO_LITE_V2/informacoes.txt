@@ -1,0 +1,12 @@
+As conexões externas podem ser feitas para qualquer GPIO, exceto para GPIOs no intervalo 6-11.  Esses seis GPIOs estão conectados a
+
+ o flash SPI integrado do módulo.
+
+ Para garantir o fornecimento de energia ao chip ESP32 durante a inicialização, é aconselhável adicionar um circuito de retardo RC no pino EN.  A configuração recomendada para o circuito de atraso RC é
+
+ geralmente R = 10 kΩ e C = 1 μF.  No entanto, parâmetros específicos devem ser ajustados com base no tempo de inicialização do módulo e o tempo de sequência de inicialização e reinicialização
+
+ do chip.  Para o diagrama de tempo de sequência de inicialização e reinicialização do ESP32, consulte a seção Esquema de energia na folha de dados do ESP32
+
+ESP32-DOWD é o processador, ESTÁ INTERNO, ABAIXO DO METAL
+DOWD MELHOR QUE DOWDQ6
